@@ -1,0 +1,31 @@
+﻿@model List<InvoiceManagementSystem.ViewModel.InvoiceItemVM>
+
+<h2>Invoice Items</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Description</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total Item</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if(Model!=null){
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Description</td>
+                    <td>@item.quantity</td>
+                    <td>@item.price</td>
+                    <td>@item.TotalItem</td>
+                    <td>
+                        <button type="button" class="btn btn-sm btn-danger deleteButton" data-id="@item">Delete</button>
+                    </td>
+                </tr>
+            }
+        }
+
+    </tbody>
+</table>

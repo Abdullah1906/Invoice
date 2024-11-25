@@ -1,0 +1,199 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Asus\\source\\repos\\InvoiceManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5680B672-8CFA-40FE-AB0B-DDBD70B22FA2}|InvoiceManagementSystem\\InvoiceManagementSystem.csproj|c:\\users\\asus\\source\\repos\\invoicemanagementsystem\\invoicemanagementsystem\\views\\customers\\invoicelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5680B672-8CFA-40FE-AB0B-DDBD70B22FA2}|InvoiceManagementSystem\\InvoiceManagementSystem.csproj|solutionrelative:invoicemanagementsystem\\views\\customers\\invoicelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5680B672-8CFA-40FE-AB0B-DDBD70B22FA2}|InvoiceManagementSystem\\InvoiceManagementSystem.csproj|c:\\users\\asus\\source\\repos\\invoicemanagementsystem\\invoicemanagementsystem\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5680B672-8CFA-40FE-AB0B-DDBD70B22FA2}|InvoiceManagementSystem\\InvoiceManagementSystem.csproj|solutionrelative:invoicemanagementsystem\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5680B672-8CFA-40FE-AB0B-DDBD70B22FA2}|InvoiceManagementSystem\\InvoiceManagementSystem.csproj|c:\\users\\asus\\source\\repos\\invoicemanagementsystem\\invoicemanagementsystem\\viewmodel\\customervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5680B672-8CFA-40FE-AB0B-DDBD70B22FA2}|InvoiceManagementSystem\\InvoiceManagementSystem.csproj|solutionrelative:invoicemanagementsystem\\viewmodel\\customervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5680B672-8CFA-40FE-AB0B-DDBD70B22FA2}|InvoiceManagementSystem\\InvoiceManagementSystem.csproj|c:\\users\\asus\\source\\repos\\invoicemanagementsystem\\invoicemanagementsystem\\datamodel\\invoiceitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5680B672-8CFA-40FE-AB0B-DDBD70B22FA2}|InvoiceManagementSystem\\InvoiceManagementSystem.csproj|solutionrelative:invoicemanagementsystem\\datamodel\\invoiceitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5680B672-8CFA-40FE-AB0B-DDBD70B22FA2}|InvoiceManagementSystem\\InvoiceManagementSystem.csproj|c:\\users\\asus\\source\\repos\\invoicemanagementsystem\\invoicemanagementsystem\\viewmodel\\invoiceitemvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5680B672-8CFA-40FE-AB0B-DDBD70B22FA2}|InvoiceManagementSystem\\InvoiceManagementSystem.csproj|solutionrelative:invoicemanagementsystem\\viewmodel\\invoiceitemvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5680B672-8CFA-40FE-AB0B-DDBD70B22FA2}|InvoiceManagementSystem\\InvoiceManagementSystem.csproj|c:\\users\\asus\\source\\repos\\invoicemanagementsystem\\invoicemanagementsystem\\viewmodel\\invoicevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5680B672-8CFA-40FE-AB0B-DDBD70B22FA2}|InvoiceManagementSystem\\InvoiceManagementSystem.csproj|solutionrelative:invoicemanagementsystem\\viewmodel\\invoicevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5680B672-8CFA-40FE-AB0B-DDBD70B22FA2}|InvoiceManagementSystem\\InvoiceManagementSystem.csproj|c:\\users\\asus\\source\\repos\\invoicemanagementsystem\\invoicemanagementsystem\\datamodel\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5680B672-8CFA-40FE-AB0B-DDBD70B22FA2}|InvoiceManagementSystem\\InvoiceManagementSystem.csproj|solutionrelative:invoicemanagementsystem\\datamodel\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5680B672-8CFA-40FE-AB0B-DDBD70B22FA2}|InvoiceManagementSystem\\InvoiceManagementSystem.csproj|c:\\users\\asus\\source\\repos\\invoicemanagementsystem\\invoicemanagementsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5680B672-8CFA-40FE-AB0B-DDBD70B22FA2}|InvoiceManagementSystem\\InvoiceManagementSystem.csproj|solutionrelative:invoicemanagementsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5680B672-8CFA-40FE-AB0B-DDBD70B22FA2}|InvoiceManagementSystem\\InvoiceManagementSystem.csproj|c:\\users\\asus\\source\\repos\\invoicemanagementsystem\\invoicemanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5680B672-8CFA-40FE-AB0B-DDBD70B22FA2}|InvoiceManagementSystem\\InvoiceManagementSystem.csproj|solutionrelative:invoicemanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5680B672-8CFA-40FE-AB0B-DDBD70B22FA2}|InvoiceManagementSystem\\InvoiceManagementSystem.csproj|c:\\users\\asus\\source\\repos\\invoicemanagementsystem\\invoicemanagementsystem\\views\\shared\\_listinvoice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5680B672-8CFA-40FE-AB0B-DDBD70B22FA2}|InvoiceManagementSystem\\InvoiceManagementSystem.csproj|solutionrelative:invoicemanagementsystem\\views\\shared\\_listinvoice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5680B672-8CFA-40FE-AB0B-DDBD70B22FA2}|InvoiceManagementSystem\\InvoiceManagementSystem.csproj|c:\\users\\asus\\source\\repos\\invoicemanagementsystem\\invoicemanagementsystem\\views\\shared\\view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5680B672-8CFA-40FE-AB0B-DDBD70B22FA2}|InvoiceManagementSystem\\InvoiceManagementSystem.csproj|solutionrelative:invoicemanagementsystem\\views\\shared\\view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InvoiceList.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\InvoiceManagementSystem\\InvoiceManagementSystem\\Views\\Customers\\InvoiceList.cshtml",
+              "RelativeDocumentMoniker": "InvoiceManagementSystem\\Views\\Customers\\InvoiceList.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\InvoiceManagementSystem\\InvoiceManagementSystem\\Views\\Customers\\InvoiceList.cshtml",
+              "RelativeToolTip": "InvoiceManagementSystem\\Views\\Customers\\InvoiceList.cshtml",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAHgAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T03:45:45.27Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InvoiceItemVM.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\InvoiceManagementSystem\\InvoiceManagementSystem\\ViewModel\\InvoiceItemVM.cs",
+              "RelativeDocumentMoniker": "InvoiceManagementSystem\\ViewModel\\InvoiceItemVM.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\InvoiceManagementSystem\\InvoiceManagementSystem\\ViewModel\\InvoiceItemVM.cs",
+              "RelativeToolTip": "InvoiceManagementSystem\\ViewModel\\InvoiceItemVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T05:27:20.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InvoiceItem.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\InvoiceManagementSystem\\InvoiceManagementSystem\\DataModel\\InvoiceItem.cs",
+              "RelativeDocumentMoniker": "InvoiceManagementSystem\\DataModel\\InvoiceItem.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\InvoiceManagementSystem\\InvoiceManagementSystem\\DataModel\\InvoiceItem.cs",
+              "RelativeToolTip": "InvoiceManagementSystem\\DataModel\\InvoiceItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T08:14:44.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Invoice.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\InvoiceManagementSystem\\InvoiceManagementSystem\\DataModel\\Invoice.cs",
+              "RelativeDocumentMoniker": "InvoiceManagementSystem\\DataModel\\Invoice.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\InvoiceManagementSystem\\InvoiceManagementSystem\\DataModel\\Invoice.cs",
+              "RelativeToolTip": "InvoiceManagementSystem\\DataModel\\Invoice.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T08:06:26.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\InvoiceManagementSystem\\InvoiceManagementSystem\\appsettings.json",
+              "RelativeDocumentMoniker": "InvoiceManagementSystem\\appsettings.json",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\InvoiceManagementSystem\\InvoiceManagementSystem\\appsettings.json",
+              "RelativeToolTip": "InvoiceManagementSystem\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAB0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-14T08:03:45.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\InvoiceManagementSystem\\InvoiceManagementSystem\\Program.cs",
+              "RelativeDocumentMoniker": "InvoiceManagementSystem\\Program.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\InvoiceManagementSystem\\InvoiceManagementSystem\\Program.cs",
+              "RelativeToolTip": "InvoiceManagementSystem\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T08:03:16.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_ListInvoice.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\InvoiceManagementSystem\\InvoiceManagementSystem\\Views\\Shared\\_ListInvoice.cshtml",
+              "RelativeDocumentMoniker": "InvoiceManagementSystem\\Views\\Shared\\_ListInvoice.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\InvoiceManagementSystem\\InvoiceManagementSystem\\Views\\Shared\\_ListInvoice.cshtml",
+              "RelativeToolTip": "InvoiceManagementSystem\\Views\\Shared\\_ListInvoice.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T07:33:02.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "View.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\InvoiceManagementSystem\\InvoiceManagementSystem\\Views\\Shared\\View.cshtml",
+              "RelativeDocumentMoniker": "InvoiceManagementSystem\\Views\\Shared\\View.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\InvoiceManagementSystem\\InvoiceManagementSystem\\Views\\Shared\\View.cshtml",
+              "RelativeToolTip": "InvoiceManagementSystem\\Views\\Shared\\View.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T07:32:27.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "InvoiceVM.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\InvoiceManagementSystem\\InvoiceManagementSystem\\ViewModel\\InvoiceVM.cs",
+              "RelativeDocumentMoniker": "InvoiceManagementSystem\\ViewModel\\InvoiceVM.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\InvoiceManagementSystem\\InvoiceManagementSystem\\ViewModel\\InvoiceVM.cs",
+              "RelativeToolTip": "InvoiceManagementSystem\\ViewModel\\InvoiceVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T03:46:42.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomerVM.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\InvoiceManagementSystem\\InvoiceManagementSystem\\ViewModel\\CustomerVM.cs",
+              "RelativeDocumentMoniker": "InvoiceManagementSystem\\ViewModel\\CustomerVM.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\InvoiceManagementSystem\\InvoiceManagementSystem\\ViewModel\\CustomerVM.cs",
+              "RelativeToolTip": "InvoiceManagementSystem\\ViewModel\\CustomerVM.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAIwBUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T03:25:39.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomersController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\InvoiceManagementSystem\\InvoiceManagementSystem\\Controllers\\CustomersController.cs",
+              "RelativeDocumentMoniker": "InvoiceManagementSystem\\Controllers\\CustomersController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\InvoiceManagementSystem\\InvoiceManagementSystem\\Controllers\\CustomersController.cs",
+              "RelativeToolTip": "InvoiceManagementSystem\\Controllers\\CustomersController.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAASwEkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T08:17:22.018Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

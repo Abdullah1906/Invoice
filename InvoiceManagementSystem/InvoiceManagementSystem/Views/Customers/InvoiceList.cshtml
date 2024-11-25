@@ -1,0 +1,345 @@
+﻿@model InvoiceManagementSystem.ViewModel.MultiModelVM
+
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "_Layout";
+}
+
+
+
+<form asp-action="InvoiceList" method="post" enctype="multipart/form-data">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="align-items-start ">
+                <div class="col-md-12">
+                    <div class="card-header text-white text-start" style="background-color:blueviolet">
+                        <h3 class="mb-0">Customer Information</h3>
+                    </div>
+                    <div class="card shadow-lg">
+                        <div class="card-body">
+                            <div class="col-md-12">
+                                <div class="text-dark">
+                                    <div class="row">
+                                        <div class="row col-md-6">
+                                            <label asp-for="Customer.Name" class="col-md-4"> Name:</label>
+                                            <input asp-for="Customer.Name" class="form-control col-md-8" placeholder="Enter Customer Name" />
+                                        </div>
+                                        <div class="row col-md-6">
+                                            <label asp-for="Customer.Number" class="col-md-4">Phone No:</label>
+                                            <input asp-for="Customer.Number" class="form-control col-md-8" placeholder="Enter Phone Number" />
+                                        </div>
+                                    </div>
+                                    <div class="row pt-4">
+                                        <label asp-for="Customer.Address" class="col-md-3">Address:</label>
+                                        <textarea asp-for="Customer.Address" class="form-control col-md-9" placeholder="Enter Address"></textarea>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="align-items-start ">
+                <div class="col-md-12">
+                    <div class="card shadow-lg">
+                        <div class="card-header text-white text-start" style="background-color:blueviolet">
+                            <h3 class="mb-0">Invoice Information</h3>
+                        </div>
+                        <div class="card-body" style="background-color:#6c5ce7">
+                            <div class="col-md-12">
+
+                                <div class="text-white">
+                                    <div class="row">
+                                        <div class="row col-md-6">
+                                            <label asp-for="Invoice.number" class="col-md-4">Invoice No:</label>
+                                            <input asp-for="Invoice.CustomerId" class="form-control" hidden />
+                                            <input asp-for="Invoice.number" class="form-control col-md-8" placeholder="Invoice Number" value="@DateTime.Now.ToString("yyMMddHHmm")" readonly />
+                                        </div>
+                                        <div class="row col-md-6">
+                                            <label asp-for="Invoice.HolderName" class="col-md-5 ">Holder Name:</label>
+                                            <input asp-for="Invoice.HolderName" class="form-control col-md-7" placeholder="Holder Name" value="@User.Identity.Name" readonly />
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row pt-5 col-md-7">
+                                        <label asp-for="Invoice.Date" class="col-md-3 ">Date:</label>
+                                        <input asp-for="Invoice.Date" class="form-control col-md-7" type="datetime-local" placeholder="Date" />
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="align-items-start  pt-2">
+        <div class="col-md-12">
+            <div class="card shadow-lg">
+                <div class="card-header text-white text-start" style="background-color:blueviolet">
+                    <div class="row">
+                        <div class="col-md-11">
+                            <h3 class="mb-0">Invoice Information</h3>
+                        </div>
+                        <div class="form-group d-flex justify-content-end">
+                            <button type="button" class="btn text-white" onclick="addItem()" style="background-color:#0097e6">Add Item</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-body text-white" style="background-color:#6c5ce7">
+                    <div class="col-md-12">
+                        <div>
+                            <div class="form-row align-items-center mb-1" id="invoice-item">
+                                <div class="col-md-7">
+                                    <label>Product Description</label>
+                                    <input id="InvoiceDescription" name="InvoiceItems[itemIndex].Description" class="form-control" placeholder="Product Description" />
+                                </div>
+
+                                <div class="col-md-1">
+                                    <label>Quantity</label>
+                                    <input type="number" id="InvoiceQuantity" name="InvoiceItems[itemIndex].Quantity" class="form-control" value="1" placeholder="Quantity" onkeyup="calculateTotal(this)" />
+                                </div>
+
+                                <div class="col-md-1">
+                                    <label>Price</label>
+                                    <input type="number" id="InvoivePrice" name="InvoiceItems[itemIndex].Price" class="form-control" step="0.01" placeholder="Price" onkeyup="calculateTotal(this)" />
+                                </div>
+
+                                <div class="col-md-2">
+                                    <label>Total</label>
+                                    <input type="text" name="InvoiceItems[itemIndex].TotalItem" class="form-control" readonly />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-9 pt-2">
+            <div class="align-items-start">
+                <div class="col-md-12">
+                    <div class="card shadow-lg">
+                        <div class="card-header text-white text-start" style="background-color:blueviolet">
+                            <h3 class="mb-0">Order List</h3>
+                        </div>
+                        <div class="card-body text-white" style="background-color:#6c5ce7">
+                            <div class="col-md-12">
+                                <table class="table">
+                                    <thead class="text-white">
+                                        <tr>
+                                            <th>Product Description</th>
+                                            <th>Quantity</th>
+                                            <th>Price</th>
+                                            <th>Total</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="invoice-items">
+                                        <!-- Dynamic rows will be appended here -->
+
+                                        
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 pt-2">
+            <div class="align-items-start">
+                <div class="col-md-12">
+                    <div class="card shadow-lg">
+                        <div class="card-header text-white text-start" style="background-color:blueviolet">
+                            <h3 class="mb-0">Total Count</h3>
+                        </div>
+                        <div class="card-body" style="background-color:#6c5ce7">
+                            <div class="col-md-12">
+
+                                <div class="text-white pt-5" id="Total-item">
+                                    <div class="row">
+                                        <label class="col-md-5">SubTotal</label>
+                                        <input type="text" class="form-control col-md-7" id="SubTotal" placeholder="Sub Total" />
+                                    </div>
+                                    <div class="row pt-3">
+                                        <label class="col-md-5">VAT</label>
+                                        <input type="number" class="form-control col-md-7" id="VAT" placeholder="Enter VAT" onkeyup="calculateVat(this)" />
+                                    </div>
+                                    <div class="row pt-3">
+                                        <label class="col-md-5">Total VAT</label>
+                                        <input class="form-control col-md-7" type="number" id="TotalVAT" placeholder="Total VAT" />
+                                    </div>
+                                    <div class="row pt-3">
+                                        <label class="col-md-5">Discount</label>
+                                        <input class="form-control col-md-7" asp-for="Customer.Discount" type="number" name="Customer.Discount" id="Discount" placeholder="Discount" onkeyup="calculateVat(this)" />
+                                    </div>
+                                    <div class="row pt-3">
+                                        <label class="col-md-5">Total</label>
+                                        <input class="form-control col-md-7" asp-for="Customer.Total" type="number" id ="Total" name="Customer.Total" placeholder="Total" />
+                                    </div>
+                                    <div class="row p-3">
+                                        
+                                        <button type="submit" class="btn btn-success col-md-5">Save</button>
+                                        <button type="submit" class="btn btn-info col-md-5 ml-5">print</button>
+                                        
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    @Html.AntiForgeryToken()
+</form>
+
+
+@{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+<script>
+    function calculateVat(element) {
+
+        const itemRow = element.closest('#Total-item');
+        // get value 
+        const SubTotalValue = parseFloat(document.getElementById("SubTotal").value) || 0;
+        const Discount = parseFloat(document.getElementById("Discount").value) || 0;
+        const VATValue = parseFloat(document.getElementById("VAT").value) || 0;
+        
+        // calculation part
+        const VatCalculation = (SubTotalValue * (VATValue/100)).toFixed(2);
+        const totalVat = parseFloat(VatCalculation).toFixed(2);
+        const DiscountVal = (parseFloat(SubTotalValue) - parseFloat(Discount)).toFixed(2);
+
+        // get and set value
+        const TotalVat = itemRow.querySelector("#TotalVAT");
+        TotalVat.value = totalVat;
+
+        const Total = document.getElementById("Total");
+        Total.value = (parseFloat(DiscountVal) + parseFloat(totalVat)).toFixed(2);
+
+        
+
+    }
+</script>
+<script>
+    //TotalItem calculation by onkeyup
+
+    function calculateTotal(element) {
+
+        const itemRow = element.closest('#invoice-item');
+
+        const Quantity = parseFloat(itemRow.querySelector('input[name *= "Quantity"]').value) || 0;
+        const Price = parseFloat(itemRow.querySelector('input[name *= "Price"]').value) || 0;
+        const total = (Quantity * Price).toFixed(2);
+
+        itemRow.querySelector('input[name*="Total"]').value = total;
+
+    }
+
+</script>
+<script>
+    let itemIndex = 0;
+    function addItem() {
+
+        var description = document.querySelector("input[name='InvoiceItems[itemIndex].Description']").value;
+        var quantity = document.querySelector("input[name='InvoiceItems[itemIndex].Quantity']").value;
+        var price = document.querySelector("input[name='InvoiceItems[itemIndex].Price']").value;
+
+        
+
+        var lineTotal = (quantity * price).toFixed(2);
+        // var itemIndex = document.querySelectorAll("#invoice-items").length;
+
+
+        var newItem = `
+                                            <tr class="text-white" id="invoice-item-${itemIndex}">
+                                                <td class="col-md-6" >
+                                                    ${description}
+                                                </td>
+                                                <td class="col-md-1.5" >
+                                                    ${quantity}
+                                                </td>
+                                                <td class="col-md-1.5">
+                                                    ${price}
+                                                </td>
+                                                <td class="col-md-2">
+                                                    ${lineTotal}
+                                                </td>
+                                                <td class="col-md-1">
+                                                    <button type="button" class="btn btn-danger" onclick="removeItem(${itemIndex}, ${lineTotal})">Remove</button>
+                                                </td>
+                                            </tr>
+
+                                 `;
+
+        document.getElementById("invoice-items").insertAdjacentHTML('beforeend', newItem);
+
+        
+        
+        // Update the subtotal
+        var subtotalField = document.getElementById("SubTotal");
+        var totalField = document.getElementById("Total");
+
+        var currentSubtotal = parseFloat(subtotalField.value) || 0;
+        var currenttotal = parseFloat(totalField.value) || 0;
+
+        currentSubtotal = (currentSubtotal + parseFloat(lineTotal)).toFixed(2);
+        currenttotal = (currenttotal + parseFloat(lineTotal)).toFixed(2);
+        subtotalField.value = currentSubtotal;
+        totalField.value = currenttotal;
+        
+
+        itemIndex++;
+
+
+        document.querySelector("input[name='InvoiceItem[itemIndex].Description']").value = '';
+        document.querySelector("input[name='InvoiceItem[itemIndex].quantity']").value = '1';
+        document.querySelector("input[name='InvoiceItem[itemIndex].price']").value = '';
+        document.querySelector("input[name='InvoiceItem[itemIndex].TotalItem']").value = '';
+    }
+
+    function removeItem(index, lineTotal) {
+        const item = document.getElementById(`invoice-item-${index}`);
+        var subtotalField = document.getElementById("SubTotal");
+        var totalField = document.getElementById("Total");
+        
+        var currentSubtotal = parseFloat(subtotalField.value) || 0;
+        var currenttotal = parseFloat(totalField.value) || 0;
+
+        if (item) {
+            item.remove();
+            // Remove the subtotal
+            currentSubtotal = (currentSubtotal - parseFloat(lineTotal)).toFixed(2);
+            currenttotal = (currenttotal - parseFloat(lineTotal)).toFixed(2);
+            subtotalField.value = currentSubtotal;
+            totalField.value = currenttotal;
+            
+        }
+        // Remove the subtotal
+
+       
+    }
+</script>
+
+
