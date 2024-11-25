@@ -5,6 +5,8 @@
         public Guid InvoiceId { get; set; }
         public string? Description { get; set; }
         public double quantity { get; set; }
+        public double ItemDiscount { get; set; }
+        public string? discountType { get; set; }
         public double price { get; set; }
         public double TotalItem { get; set; }
         //for admin

@@ -3,7 +3,7 @@
     public class InvoiceVM
     {
         public Guid CustomerId { get; set; }
-        public string? number { get; set; }
+        public string? InvoiceId { get; set; }
         public string? HolderName { get; set; }
         public DateTime Date { get; set; }
 
@@ -14,4 +14,5 @@
         public DateTime UpdatedAt { get; set; }
         public Guid UpdatedBy { get; set; }
     }
+}
 }

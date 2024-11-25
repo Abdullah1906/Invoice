@@ -1,7 +1,9 @@
-﻿namespace InvoiceManagementSystem.ViewModel
+﻿namespace InvoiceManagementSystem.ViewModel 
 {
+
     public class CustomerVM
     {
+        public Guid CustomerId { get; set; }
         public string? Name { get; set; }
         public string? Number { get; set; }
         public string? Address { get; set; }
@@ -17,7 +19,7 @@
     public class MultiModelVM
     {
         public CustomerVM? Customer { get; set; }
-        
+
         public InvoiceVM? Invoice { get; set; }
         public List<InvoiceItemVM>? InvoiceItem { get; set; }
 
@@ -27,6 +29,8 @@
         public Guid InvoiceId { get; set; }
         public string? Description { get; set; }
         public double quantity { get; set; }
+        public double ItemDiscount { get; set; }
+        public string? discountType { get; set; }
         public double price { get; set; }
         public double TotalItem { get; set; }
 

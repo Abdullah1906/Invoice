@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Asus\\source\\repos\\InvoiceManagementSystem\\InvoiceManagementSystem\\InvoiceManagementSystem.csproj": {}
+    "E:\\Invoice\\Invoice\\InvoiceManagementSystem\\InvoiceManagementSystem\\InvoiceManagementSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Asus\\source\\repos\\InvoiceManagementSystem\\InvoiceManagementSystem\\InvoiceManagementSystem.csproj": {
+    "E:\\Invoice\\Invoice\\InvoiceManagementSystem\\InvoiceManagementSystem\\InvoiceManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus\\source\\repos\\InvoiceManagementSystem\\InvoiceManagementSystem\\InvoiceManagementSystem.csproj",
+        "projectUniqueName": "E:\\Invoice\\Invoice\\InvoiceManagementSystem\\InvoiceManagementSystem\\InvoiceManagementSystem.csproj",
         "projectName": "InvoiceManagementSystem",
-        "projectPath": "C:\\Users\\Asus\\source\\repos\\InvoiceManagementSystem\\InvoiceManagementSystem\\InvoiceManagementSystem.csproj",
+        "projectPath": "E:\\Invoice\\Invoice\\InvoiceManagementSystem\\InvoiceManagementSystem\\InvoiceManagementSystem.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus\\source\\repos\\InvoiceManagementSystem\\InvoiceManagementSystem\\obj\\",
+        "outputPath": "E:\\Invoice\\Invoice\\InvoiceManagementSystem\\InvoiceManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
